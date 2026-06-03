@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact — Yash</title>
+<meta name="description" content="Yash Gupta — Junior Consultant at Bain & Company. Strategy, analytics, and problem solving." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Rubik+Glitch&family=Archivo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+<style>
+.subhero{min-height:62vh;display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden}
+.subhero .eyebrow{margin-bottom:26px}
+.subhero h1{font-size:clamp(2.6rem,9vw,7rem);line-height:.9}
+.subhero h1 a{color:var(--ink);text-decoration:none;border-bottom:2px solid var(--line);transition:border-color .3s}
+.subhero h1 a:hover{border-color:var(--accent)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;padding-top:20px}
+.contact-list{display:flex;flex-direction:column}
+.contact-row{display:flex;justify-content:space-between;align-items:center;padding:24px 0;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink);transition:padding .35s var(--ease)}
+.contact-row:hover{padding-left:12px}
+.contact-row .label{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft);font-weight:600}
+.contact-row .val{font-size:1.1rem}
+.contact-row .arrow{color:var(--ink-soft);transition:transform .35s var(--ease)}
+.contact-row:hover .arrow{transform:translate(4px,-4px);color:var(--ink)}
+.form{display:flex;flex-direction:column;gap:18px}
+.form label{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:8px;display:block;font-weight:600}
+.form input,.form textarea{width:100%;background:var(--bg-2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;color:var(--ink);font-family:var(--sans);font-size:.98rem;transition:border-color .3s var(--ease)}
+.form input:focus,.form textarea:focus{outline:none;border-color:var(--accent)}
+.form textarea{resize:vertical;min-height:130px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 28px;border-radius:100px;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600;text-decoration:none;color:var(--ink);border:1px solid var(--accent);background:transparent;cursor:pointer;transition:background .35s var(--ease),color .35s var(--ease)}
+.btn:hover{background:var(--accent);color:var(--bg)}
+@media(max-width:880px){.contact-grid{grid-template-columns:1fr;gap:44px}}
+</style>
+</head>
+<body>
+<div class="prog" id="prog"></div>
+<div class="atmos"><div class="orb o1"></div><div class="orb o2"></div></div>
+<div class="grain"></div>
+<nav class="nav">
+  <a href="index.html" class="brand">Yash<span> Gupta</span></a>
+  <div class="links"><a href="index.html">About</a><a href="career.html">Career</a><a href="projects.html">Projects</a><a href="contact.html" class="active">Contact</a></div>
+  <button class="nav-toggle" aria-label="Menu">&#9776;</button>
+</nav>
+<header class="subhero wrap">
+  <p class="eyebrow">Get in touch</p>
+  <h1><span class="clarity">Let's start a</span><br><span class="wave" data-word="Conversation"></span></h1>
+</header>
+
+<section class="block wrap" style="padding-top:40px;">
+  <div class="contact-grid">
+    <div class="rv">
+      <p class="eyebrow" style="margin-bottom:8px;">Channels</p>
+      <div class="contact-list">
+        <a class="contact-row" href="mailto:yashguptaji2001@gmail.com"><span class="label">Email</span><span class="val">yashguptaji2001@gmail.com</span><span class="arrow">&#8599;</span></a>
+        <a class="contact-row" href="https://www.linkedin.com/in/yashguptaji" target="_blank" rel="noopener"><span class="label">LinkedIn</span><span class="val">/in/yashguptaji</span><span class="arrow">&#8599;</span></a>
+        <a class="contact-row" href="https://github.com/yashguptaji" target="_blank" rel="noopener"><span class="label">GitHub</span><span class="val">@yashguptaji</span><span class="arrow">&#8599;</span></a>
+        <a class="contact-row" href="#"><span class="label">Based in</span><span class="val">Gurugram, India</span><span class="arrow">&#8599;</span></a>
+      </div>
+    </div>
+    <div class="rv">
+      <p class="eyebrow" style="margin-bottom:20px;">Or send a note</p>
+      <div class="form">
+        <div><label>Name</label><input type="text" placeholder="Your name" /></div>
+        <div><label>Email</label><input type="email" placeholder="you@email.com" /></div>
+        <div><label>Message</label><textarea placeholder="What's on your mind?"></textarea></div>
+        <button class="btn" id="sendBtn">Send message</button>
+      </div>
+      <p class="small" style="margin-top:16px;">Form is front-end only. Hook it to Formspree or your email to make it live.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="site-foot wrap">
+  <div class="row">
+    <span class="brand">Yash<span style="color:var(--ink-faint)"> Gupta</span></span>
+    <div style="display:flex;gap:24px;"><a href="contact.html">Email</a><a href="https://www.linkedin.com/in/yashguptaji" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/yashguptaji" target="_blank" rel="noopener">GitHub</a></div>
+  </div>
+  <p class="small" style="margin-top:24px;">&copy; <span id="yr"></span> Yash Gupta. Clarity from complexity.</p>
+</footer>
+
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script defer src="js/main.js"></script>
+<script>
+(function(){
+  var sb=document.getElementById("sendBtn");
+  if(sb){sb.addEventListener("click",function(){sb.textContent="Thanks \u2014 I'll be in touch";sb.disabled=true;sb.style.opacity=".7";});}
+})();
+})();
+</script>
+</body>
+</html>

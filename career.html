@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Career — Yash</title>
+<meta name="description" content="Yash Gupta — Junior Consultant at Bain & Company. Strategy, analytics, and problem solving." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Rubik+Glitch&family=Archivo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+<style>
+.subhero{min-height:74vh;display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden}
+.subhero .eyebrow{margin-bottom:26px}
+.subhero h1{font-size:clamp(3rem,11vw,9rem);line-height:.86}
+.subhero .sub{color:var(--ink-soft);font-size:clamp(1rem,1.4vw,1.25rem);max-width:560px;margin-top:30px;font-family:var(--sans)}
+.timeline{position:relative;max-width:920px;margin:0 auto;padding-top:10px}
+.tl-rail{position:absolute;left:50%;top:0;bottom:0;width:1px;transform:translateX(-50%);background:var(--line)}
+.tl-line{position:absolute;left:50%;top:0;bottom:0;width:1px;transform:translateX(-50%);background:var(--accent);box-shadow:0 0 12px var(--glow)}
+.tl-item{position:relative;width:50%;padding:0 50px 74px}
+.tl-item:nth-child(odd){left:0;text-align:right}
+.tl-item:nth-child(even){left:50%;text-align:left}
+.tl-item .dot{position:absolute;top:8px;width:14px;height:14px;border-radius:50%;background:var(--bg);border:2px solid var(--accent);z-index:2}
+.tl-item:nth-child(odd) .dot{right:-7px}.tl-item:nth-child(even) .dot{left:-7px}
+.tl-item.edu .dot{border-style:dashed}
+.tl-card{background:linear-gradient(180deg,var(--bg-2),rgba(18,18,18,.4));border:1px solid var(--line);border-radius:14px;padding:26px 28px;transition:border-color .4s var(--ease),transform .4s var(--ease)}
+.tl-card:hover{border-color:rgba(255,255,255,.25);transform:translateY(-3px)}
+.tl-when{font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft);font-weight:600}
+.tl-role{font-family:var(--clarity);text-transform:uppercase;font-size:1.25rem;margin:12px 0 6px;line-height:1.05}
+.tl-org{color:var(--ink-soft);font-size:.95rem}
+.tl-desc{color:var(--ink-soft);font-size:.92rem;margin-top:14px}
+.tl-tag{display:inline-block;margin-top:16px;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;padding:5px 13px;border-radius:100px;border:1px solid var(--line);color:var(--ink-soft);font-weight:600}
+.tl-item.edu .tl-tag{border-style:dashed;color:var(--accent-2)}
+.tl-item.edu .tl-role .glitch{font-size:1em}
+@media(max-width:880px){
+  .tl-rail,.tl-line{left:16px}
+  .tl-item,.tl-item:nth-child(odd),.tl-item:nth-child(even){width:100%;left:0;text-align:left;padding:0 0 52px 46px}
+  .tl-item:nth-child(odd) .dot,.tl-item:nth-child(even) .dot{left:9px;right:auto}
+}
+</style>
+</head>
+<body>
+<div class="prog" id="prog"></div>
+<div class="atmos"><div class="orb o1"></div><div class="orb o2"></div></div>
+<div class="grain"></div>
+<nav class="nav">
+  <a href="index.html" class="brand">Yash<span> Gupta</span></a>
+  <div class="links"><a href="index.html">About</a><a href="career.html" class="active">Career</a><a href="projects.html">Projects</a><a href="contact.html">Contact</a></div>
+  <button class="nav-toggle" aria-label="Menu">&#9776;</button>
+</nav>
+<header class="subhero wrap">
+  <p class="eyebrow">The path so far</p>
+  <h1><span class="clarity" style="font-size:.46em;color:var(--ink-soft);display:block;margin-bottom:.2em;">A</span><span class="ascend" data-word="Progression"></span><span class="clarity" style="font-size:.46em;color:var(--ink-soft);display:block;margin-top:.55em;">not a list.</span></h1>
+  <p class="sub">From early internships through to consulting, with a degree threaded right through the middle. Each step built on the last.</p>
+</header>
+
+<section class="block wrap">
+  <div class="timeline">
+    <div class="tl-rail"></div><div class="tl-line"></div>
+
+    <div class="tl-item rv"><span class="dot"></span><div class="tl-card">
+      <div class="tl-when">May 2026 &mdash; Present</div>
+      <div class="tl-role clarity">Junior Consultant</div>
+      <div class="tl-org">Bain &amp; Company &middot; Gurugram</div>
+      <div class="tl-desc">Solving complex business problems across industries through strategy, analytics, and execution-focused problem solving.</div>
+      <span class="tl-tag">Full-time</span>
+    </div></div>
+
+    <div class="tl-item edu rv"><span class="dot"></span><div class="tl-card">
+      <div class="tl-when">2024 &mdash; 2026</div>
+      <div class="tl-role clarity">MBA</div>
+      <div class="tl-org">IIM Ahmedabad</div>
+      <div class="tl-desc">Post-graduate management. Scored 99.9 percentile in CAT 2023 to earn a place at India's top business school.</div>
+      <span class="tl-tag">Education</span>
+    </div></div>
+
+    <div class="tl-item rv"><span class="dot"></span><div class="tl-card">
+      <div class="tl-when">Apr &mdash; May 2025</div>
+      <div class="tl-role clarity">Summer Intern</div>
+      <div class="tl-org">EY-Parthenon &middot; Mumbai</div>
+      <div class="tl-desc">Life Sciences practice. Worked on commercial strategy initiatives focused on driving growth for an OTC healthcare product.</div>
+      <span class="tl-tag">Internship</span>
+    </div></div>
+
+    <div class="tl-item rv"><span class="dot"></span><div class="tl-card">
+      <div class="tl-when">Jul 2023 &mdash; Jun 2024</div>
+      <div class="tl-role clarity">Associate Developer</div>
+      <div class="tl-org">SAP Labs India &middot; Bengaluru</div>
+      <div class="tl-desc">Part of the AI Frontrunners team, building AI-driven solutions across multiple business domains using emerging technologies.</div>
+      <span class="tl-tag">Full-time</span>
+    </div></div>
+
+    <div class="tl-item edu rv"><span class="dot"></span><div class="tl-card">
+      <div class="tl-when">2019 &mdash; 2023</div>
+      <div class="tl-role clarity">B.Tech, ECE</div>
+      <div class="tl-org">IIT Guwahati</div>
+      <div class="tl-desc">Electronics &amp; Communication Engineering. Department Rank 2 with a 9.02 CGPA.</div>
+      <span class="tl-tag">Education</span>
+    </div></div>
+
+    <div class="tl-item rv"><span class="dot"></span><div class="tl-card">
+      <div class="tl-when">May &mdash; Jul 2022</div>
+      <div class="tl-role clarity">Engineering Intern</div>
+      <div class="tl-org">Qualcomm &middot; Hyderabad</div>
+      <div class="tl-desc">Interim engineering internship within the hardware/systems team.</div>
+      <span class="tl-tag">Internship</span>
+    </div></div>
+
+    <div class="tl-item rv"><span class="dot"></span><div class="tl-card">
+      <div class="tl-when">Jun &mdash; Jul 2021</div>
+      <div class="tl-role clarity">SDE Intern</div>
+      <div class="tl-org">Auroville Investment Management &middot; Hong Kong</div>
+      <div class="tl-desc">Built a PayPal payment gateway for subscription services and a market-sentiment polling system; database and bug-fix work.</div>
+      <span class="tl-tag">Internship</span>
+    </div></div>
+
+  </div>
+</section>
+
+<footer class="site-foot wrap">
+  <div class="row">
+    <span class="brand">Yash<span style="color:var(--ink-faint)"> Gupta</span></span>
+    <div style="display:flex;gap:24px;"><a href="contact.html">Email</a><a href="https://www.linkedin.com/in/yashguptaji" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/yashguptaji" target="_blank" rel="noopener">GitHub</a></div>
+  </div>
+  <p class="small" style="margin-top:24px;">&copy; <span id="yr"></span> Yash Gupta. Clarity from complexity.</p>
+</footer>
+
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script defer src="js/main.js"></script>
+</body>
+</html>

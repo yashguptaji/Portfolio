@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Projects — Yash</title>
+<meta name="description" content="Yash Gupta — Junior Consultant at Bain & Company. Strategy, analytics, and problem solving." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Rubik+Glitch&family=Archivo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+<style>
+.subhero{min-height:66vh;display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden}
+.subhero .eyebrow{margin-bottom:26px}
+.subhero h1{font-size:clamp(3rem,11vw,9rem);line-height:.86}
+.subhero .sub{color:var(--ink-soft);font-size:clamp(1rem,1.4vw,1.25rem);max-width:560px;margin-top:30px;font-family:var(--sans)}
+.proj-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
+.proj{position:relative;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:linear-gradient(160deg,var(--bg-2),var(--bg));padding:36px;min-height:290px;display:flex;flex-direction:column;justify-content:space-between;transition:border-color .4s var(--ease),transform .4s var(--ease)}
+.proj::before{content:"";position:absolute;inset:0;background:radial-gradient(400px 200px at var(--mx,50%) var(--my,0%),rgba(255,255,255,.07),transparent 70%);opacity:0;transition:opacity .4s var(--ease)}
+.proj:hover{transform:translateY(-5px);border-color:rgba(255,255,255,.28)}.proj:hover::before{opacity:1}
+.proj .num{font-family:var(--clarity);font-size:1.2rem;color:var(--ink-faint);position:relative}
+.proj h3{font-family:var(--clarity);text-transform:uppercase;font-size:1.5rem;margin:16px 0 12px;position:relative;line-height:1.05}
+.proj p{color:var(--ink-soft);font-size:.95rem;position:relative}
+.proj .stack{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px;position:relative}
+.proj .stack span{font-size:.7rem;padding:5px 12px;border:1px solid var(--line);border-radius:100px;color:var(--ink-soft);text-transform:uppercase}
+.proj .go{margin-top:24px;font-size:.76rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--ink);text-decoration:none;position:relative}
+.proj .go .arrow{display:inline-block;transition:transform .35s var(--ease)}.proj:hover .go .arrow{transform:translateX(5px)}
+@media(max-width:880px){.proj-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="prog" id="prog"></div>
+<div class="atmos"><div class="orb o1"></div><div class="orb o2"></div></div>
+<div class="grain"></div>
+<nav class="nav">
+  <a href="index.html" class="brand">Yash<span> Gupta</span></a>
+  <div class="links"><a href="index.html">About</a><a href="career.html">Career</a><a href="projects.html" class="active">Projects</a><a href="contact.html">Contact</a></div>
+  <button class="nav-toggle" aria-label="Menu">&#9776;</button>
+</nav>
+<header class="subhero wrap">
+  <p class="eyebrow">Selected work</p>
+  <h1><span class="clarity">Things I've</span><br><span class="build" data-word="Built"></span></h1>
+  <p class="sub">A mix of casework, side analysis, and the projects I keep coming back to. Swap in real links and detail as you go.</p>
+</header>
+
+<section class="block wrap">
+  <div class="proj-grid rv-group">
+    <article class="proj"><div><div class="num">01</div><h3>CryptoVerse</h3><p>A platform to carry cryptocurrency transactions wallet to wallet, using MetaMask and Solidity smart contracts for ETH. Check your receipt for some fun.</p></div><div><div class="stack"><span>Solidity</span><span>Web3</span><span>MetaMask</span></div><a class="go" href="https://github.com/yashguptaji/CryptoVerse">View on GitHub <span class="arrow">&rarr;</span></a></div></article>
+    <article class="proj"><div><div class="num">02</div><h3>ShareMe</h3><p>A social media app with Google OAuth, image posting, comments, save &amp; download, likes, and a personal dashboard. Built with React and TailwindCSS, with love.</p></div><div><div class="stack"><span>React</span><span>Tailwind</span><span>OAuth</span></div><a class="go" href="https://github.com/yashguptaji/ShareMe">View on GitHub <span class="arrow">&rarr;</span></a></div></article>
+    <article class="proj"><div><div class="num">03</div><h3>GPT / 4HANA Data Loader</h3><p>At SAP Labs' AI Frontrunners team: a data loader that prepares files to be consumed for model training, part of building AI-driven solutions across business domains.</p></div><div><div class="stack"><span>AI / ML</span><span>SAP</span><span>Data</span></div><a class="go" href="#">Read more <span class="arrow">&rarr;</span></a></div></article>
+    <article class="proj"><div><div class="num">04</div><h3>OTC Growth Strategy</h3><p>EY-Parthenon Life Sciences engagement: commercial strategy work focused on driving growth for an over-the-counter healthcare product.</p></div><div><div class="stack"><span>Strategy</span><span>Healthcare</span><span>Commercial</span></div><a class="go" href="#">Read more <span class="arrow">&rarr;</span></a></div></article>
+  </div>
+</section>
+
+<footer class="site-foot wrap">
+  <div class="row">
+    <span class="brand">Yash<span style="color:var(--ink-faint)"> Gupta</span></span>
+    <div style="display:flex;gap:24px;"><a href="contact.html">Email</a><a href="https://www.linkedin.com/in/yashguptaji" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/yashguptaji" target="_blank" rel="noopener">GitHub</a></div>
+  </div>
+  <p class="small" style="margin-top:24px;">&copy; <span id="yr"></span> Yash Gupta. Clarity from complexity.</p>
+</footer>
+
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script defer src="js/main.js"></script>
+</body>
+</html>
